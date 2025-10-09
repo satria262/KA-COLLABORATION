@@ -1,0 +1,72 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #EFF6FF;
+}
+.upper {
+    display: flex;
+    justify-content: space-between;
+}
+.addodle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mini_profile {
+    display: flex;
+    gap: inherit;
+}
+.profile {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+#after_arrow {
+    border: 2px solid #EFF6FF;
+    margin-left: -8px;
+}
+.collaborator_profile {
+    display: flex;
+}
+.arrow {
+    height: 40px;
+    height: 40px;
+    object-fit: cover; 
+}
+.ontrack {
+    background-color: #D5EEEB;
+    border-radius: 8px;
+    height: 32px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #399d63ff; 
+}
+.timer {
+    display: flex;
+    gap: 20px;
+}
+.assign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stopwacth {
+    background-color: #DCEDEC;
+    width: 144px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 80px;
+}
+.time_spent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 8px;
+}
+.deadline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
