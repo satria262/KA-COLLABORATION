@@ -10,6 +10,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow : 0 0 2px 0 #00000072;
+    border: 0.2px;
+    border-style: none none solid none;
+    border-color: #a4a2a29c;
 }
 .header_inner {
     width: 1440px;
@@ -25,6 +29,10 @@ header {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+.left_header img {
+    margin: 0;
+    margin-left: -29px;
 }
 .right_header {
     display: flex;
@@ -142,4 +150,27 @@ header {
     height: 24px;
     object-fit: cover;
     margin: 0;
+}
+aside {
+    background-color: #ffffff;
+    color: grey;
+    float: left;
+    width: 18%;
+    height: 90vh;
+    margin: 0 auto;
+    border: 0.2px;
+    border-style: none solid none;
+    border-color: #a4a2a29c;
+}
+aside ul {
+    list-style: none;
+}
+aside ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+aside ul li img {
+    width: 24px; 
+    height: 24px;
 }
