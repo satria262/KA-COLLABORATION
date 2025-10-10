@@ -108,3 +108,11 @@ header {
     font-size: 20px;
     border: none;
 }
+.button :hover{
+     border-radius: 10px;
+    background: rgb(27, 27, 27);
+    color: aliceblue;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+}
