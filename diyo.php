@@ -41,6 +41,7 @@
   <!-- satria end -->
   <!-- start diyo -->
   <div class="page-container">
+    <div class="inner">
     <h2 class="page-title">Tasks</h2>
 
     <div class="overview-card">
@@ -203,6 +204,7 @@
         </div>
 
       </div>
+    </div>
     </div>
   </div>
   <!-- diyo end -->

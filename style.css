@@ -16,7 +16,7 @@ header {
     border-color: #a4a2a29c;
 }
 .header_inner {
-    width: 94%;
+    width: 95%;
     height: 75px;
     display: flex;
     justify-content: space-between;
@@ -39,13 +39,23 @@ header {
     align-items: center;
     gap: 24px;
 }
-.right_header input {
-    height: 32px;
-    width: 288px;
-    text-align: start;
+.search {
+    width: 340px;
+    height: 44px;
     display: flex;
-    border-radius: 8px;
-    border: 1px solid black;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid #9A93B3;
+}
+.search span img {
+    padding-left: 8px;
+}
+.right_header input {
+    outline: none;
+    border: none;
+    background: transparent;
 } 
 .user { 
     display: flex;
