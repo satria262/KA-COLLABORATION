@@ -1,0 +1,46 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #ffffff;
+    font-optical-sizing: auto;
+    margin: 0 auto;
+}
+header {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center;  */
+}
+.header_inner {
+    width: 1440px;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.icon {
+    width: 32px;
+}
+.left_header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.right_header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.images{
+    width: 600px;
+}
+.form-login{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.email-form{
+     display: flex;
+   
+}

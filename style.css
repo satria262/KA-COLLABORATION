@@ -16,8 +16,8 @@ header {
     border-color: #a4a2a29c;
 }
 .header_inner {
-    width: 1440px;
-    max-height: 70px;
+    width: 94%;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +74,11 @@ header {
     object-fit: cover;
     border-radius: 50px;
 }
-#after_arrow {
+.after_arrow {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50px;
     border: 2px solid #EFF6FF;
     margin-left: -8px;
 }
@@ -154,7 +158,7 @@ header {
 aside {
     background-color: #ffffff;
     color: grey;
-    float: left;
+    /* float: right; */
     width: 18%;
     height: 90vh;
     margin: 0 auto;
