@@ -14,7 +14,7 @@
   <!-- wrap aside&diyo -->
    <div class="main">
   <!-- start satria -->
-    <div class="aside">
+    <div class="aside">  
         <ul>
             <li>
                 <img src="logo/icons8-project-100 (1).png" alt="">
