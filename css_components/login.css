@@ -44,6 +44,30 @@ header {
     width: 100%;
 }
 .email-form{
+    display: flex;
+   
+}
+.main-right{
+    display: flex;
+    align-items: center;
+    gap: 24px; 
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    width: 360px;
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.text{
+    color: rgb(47, 47, 47);
+    font-weight: 300;
+}
+.email-form{
      display: flex;
 }
  .input {
