@@ -11,6 +11,12 @@ header {
     /* justify-content: center; */
     /* align-items: center;  */
 }
+
+.main-container{
+    justify-content: center;
+    align-items: center;
+}
+
 .header_inner {
     width: 1440px;
     max-height: 70px;
@@ -31,9 +37,6 @@ header {
     align-items: center;
     gap: 24px;
 }
-.images{
-    width: 600px;
-}
 .form-login{
       display: flex;
     flex-direction: column;
@@ -42,5 +45,54 @@ header {
 }
 .email-form{
      display: flex;
-   
+}
+ .input {
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #A69999;
+}
+.images {
+    width: 600px;
+       display: flex;
+       object-fit: cover;
+}
+.input-style {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+.checkbox-terms {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-terms2 {
+    display: flex;
+}
+.button {
+    border-radius: 10px;
+    background: black;
+    color: aliceblue;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+}
+.main-container{
+    display: flex;
+    
+}
+.bottem-crate-akun{
+    display: flex;
+    justify-content: center;
+}
+.sign-up{
+    color: black;
+    font-weight: 600;
+}
+.pw{
+    color: black;
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

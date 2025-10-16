@@ -6,7 +6,70 @@
     <link rel="stylesheet" href="css_components/register.css">
     <title>REGISTER</title>
 </head>
+
 <body>
-    
+    <main>
+        <div class="main-container">
+            <!-- Gambar sebelah kiri -->
+            <div>
+                <img src="images/13a21a0cb5e76e435025b264873c612fab402142.png" alt="" class="images">
+            </div>
+
+            <!-- Form sebelah kanan -->
+            <div class="main-right">
+                <div>
+                    <h1>Create Account</h1>
+                    <span class="text">Fill in your details to sign up.</span>
+
+                    <div>
+                        <form id="registerForm" class="input-style">
+                            <input placeholder="Full Name" type="text" class="input" id="fullname" required>
+                            <input placeholder="Email" type="email" class="input" id="email" required>
+                            <input placeholder="Password" type="password" class="input" id="password" required>
+                            <input placeholder="Confirm Password" type="password" class="input" id="confirmPassword" required>
+
+                            <div class="checkbox-terms">
+                                <div class="checkbox-terms2">
+                                    <input type="checkbox" required>
+                                    <p>Agree to Terms & Conditions</p>
+                                </div>
+                            </div>
+
+                            <button class="button" type="submit">Sign up</button>
+
+                            <p class="bottem-crate-akun">
+                                Already have an account? <a href="login.html">Log in</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript langsung di bawah -->
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const fullname = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Password tidak cocok!");
+                return;
+            }
+
+            // Simpan data user ke localStorage (simulasi database)
+            const userData = { fullname, email, password };
+            localStorage.setItem("user", JSON.stringify(userData));
+
+            alert("Pendaftaran berhasil! Silakan login.");
+            window.location.href = "login.html";
+        });
+    </script>
 </body>
+
 </html>

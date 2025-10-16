@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="css_components/login.css">
 </head>
 
 <body>
     <header>
         <div class="header_inner">
             <div class="left_header">
-                <img src="images/icons8-fibonacci-circles-100.png" alt="" class="icon">
-                <h1 class="title">AProjectO</h1>
+                <img src="logo/Icon (1).png" alt="">
             </div>
             <div class="right_header">
                 <img src="images/star-removebg-preview.png" alt="" class="icon">
@@ -23,34 +22,69 @@
             </div>
         </div>
     </header>
+
     <main>
         <div class="main-container">
+            <!-- Gambar sebelah kiri -->
             <div>
                 <img src="images/13a21a0cb5e76e435025b264873c612fab402142.png" alt="" class="images">
             </div>
+
+            <!-- Form sebelah kanan -->
             <div class="main-right">
                 <div>
                     <h1>Welcome Back, Yash</h1>
-                    <span class="text">Welcome back! Please enter your details. </span>
+                    <span class="text">Welcome back! Please enter your details.</span>
                     <div>
-                        <form action="" class="input-style">
-                            <input placeholder="Email" type="email" class="input" id="email">
-                            <input placeholder="Password" type="password" class="input" id="password">
+                        <form id="loginForm" class="input-style">
+                            <!-- Ubah agar sesuai dengan fungsi login -->
+                            <input placeholder="Email" type="email" class="input" id="email" required>
+                            <input placeholder="Password" type="password" class="input" id="password" required>
+
                             <div class="checkbox-terms">
                                 <div class="checkbox-terms2">
                                     <input type="checkbox">
-                                    <p>terms & Conditions</p>
+                                    <p>Terms & Conditions</p>
                                 </div>
-                                <p>Forgot <a href="">password</a></p>
+                                <p>Forgot <a href="#">password</a></p>
                             </div>
-                            <button class="button hover">Log in</button>
-                            <p class="bottem-crate-akun">dont' have account? <a href="">Sing up for free</a></p>
+
+                            <button class="button" type="submit">Log in</button>
+
+                            <p class="bottem-crate-akun">
+                                Don't have an account? <a href="register.html">Sign up for free</a>
+                            </p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- JS LOGIN LANGSUNG -->
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            const storedUser = JSON.parse(localStorage.getItem("user"));
+
+            if (!storedUser) {
+                alert("Akun belum terdaftar! Silakan sign up dulu.");
+                window.location.href = "register.html";
+                return;
+            }
+
+            if (storedUser.email === email && storedUser.password === password) {
+                alert("Login berhasil!");
+                window.location.href = "diyo.php"; // diarahkan ke dashboard
+            } else {
+                alert("Email atau password salah!");
+            }
+        });
+    </script>
 </body>
 
 </html>
